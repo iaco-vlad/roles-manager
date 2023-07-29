@@ -1,9 +1,7 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="container">
+    <router-view/>
+  </div>
 </template>
 
 <style>
@@ -11,20 +9,21 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+.container {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.title {
+  color: gray
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+select, input {
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 </style>
